@@ -18,37 +18,55 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain" translatesAutoresizingMaskIntoConstraints="NO" id="rZB-0n-rcS">
-                                <rect key="frame" x="205" y="20" width="191" height="185"/>
+                                <rect key="frame" x="205" y="40" width="191" height="185"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="185" id="Iad-R6-8A3"/>
                                     <constraint firstAttribute="width" constant="191" id="kRk-a1-Q0F"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JBz-we-YRk">
-                                <rect key="frame" x="174" y="240" width="253" height="35"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JBz-we-YRk" customClass="CustomTextField" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="174" y="260" width="253" height="40"/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="ms8-Qg-chi"/>
+                                    <constraint firstAttribute="height" constant="40" id="ms8-Qg-chi"/>
                                     <constraint firstAttribute="width" constant="253" id="yIb-9d-WBE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mPD-v0-GBe">
-                                <rect key="frame" x="174" y="310" width="253" height="35"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mPD-v0-GBe" customClass="CustomTextField" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="174" y="325" width="253" height="40"/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="253" id="bkO-wR-JK6"/>
-                                    <constraint firstAttribute="height" constant="35" id="rA9-Yw-uxs"/>
+                                    <constraint firstAttribute="height" constant="40" id="rA9-Yw-uxs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXf-kv-z7q">
-                                <rect key="frame" x="227" y="380" width="147" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXf-kv-z7q" customClass="CustomButton" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="227" y="400" width="147" height="42"/>
+                                <color key="backgroundColor" red="0.066666666666666666" green="0.5725490196078431" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="147" id="fkc-Pm-2e5"/>
                                     <constraint firstAttribute="height" constant="42" id="nMS-nb-aY5"/>
                                 </constraints>
                                 <state key="normal" title="Login"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -56,9 +74,9 @@
                             <constraint firstItem="JBz-we-YRk" firstAttribute="top" secondItem="rZB-0n-rcS" secondAttribute="bottom" constant="35" id="1mf-KX-k0D"/>
                             <constraint firstItem="XXf-kv-z7q" firstAttribute="centerX" secondItem="mPD-v0-GBe" secondAttribute="centerX" id="5Rl-9n-sia"/>
                             <constraint firstItem="XXf-kv-z7q" firstAttribute="top" secondItem="mPD-v0-GBe" secondAttribute="bottom" constant="35" id="LvA-R1-LhH"/>
-                            <constraint firstItem="mPD-v0-GBe" firstAttribute="top" secondItem="JBz-we-YRk" secondAttribute="bottom" constant="35" id="MWu-Ug-cUS"/>
+                            <constraint firstItem="mPD-v0-GBe" firstAttribute="top" secondItem="JBz-we-YRk" secondAttribute="bottom" constant="25" id="MWu-Ug-cUS"/>
                             <constraint firstItem="JBz-we-YRk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Po8-Rw-1DC"/>
-                            <constraint firstItem="rZB-0n-rcS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ae4-aY-dxB"/>
+                            <constraint firstItem="rZB-0n-rcS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="ae4-aY-dxB"/>
                             <constraint firstItem="rZB-0n-rcS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ggm-ia-xeK"/>
                             <constraint firstItem="mPD-v0-GBe" firstAttribute="centerX" secondItem="JBz-we-YRk" secondAttribute="centerX" id="lTa-tt-Hgf"/>
                         </constraints>
